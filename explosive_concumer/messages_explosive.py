@@ -5,6 +5,7 @@ from sqlalchemy.orm import declarative_base, sessionmaker, relationship
 import datetime
 import psycopg2
 
+
 #יצירת דאטא ביייס
 engine = create_engine("postgresql://postgres:1234@localhost:5432/suspicious_sentences")
 Base = declarative_base()
@@ -87,5 +88,8 @@ for mail in consumer:
         print(f"Error occurred while processing {mail['email']}: {str(e)}")
     finally:
         session.close()
+
+
+
 
 
