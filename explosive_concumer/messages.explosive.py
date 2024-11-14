@@ -25,7 +25,7 @@ class User(Base):
 
 
 class ContentExplosiveSuspicious(Base):
-    __tablename__ = ' content_explosive_suspicious'
+    __tablename__ = 'content_explosive_suspicious'
 
     id = Column(Integer, primary_key=True)
     created_at = Column(DateTime, default=datetime.datetime.utcnow)
