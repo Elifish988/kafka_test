@@ -21,8 +21,10 @@ docker exec -it kafka_test-kafka-1 bash
 2. create the topic
 
 kafka-topics --create --topic all.messages --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
+kafka-topics --create --topic messages.hostage --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
+kafka-topics --create --topic messages.explosive --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
 
-excpeted output: Created topic gur_topic.
+excpeted output: Created topic ---------.
 """
 
 # how do i know what topics do i have?

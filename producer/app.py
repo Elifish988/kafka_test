@@ -1,6 +1,6 @@
 from flask import Flask, request
 
-from producer.producer import get_mail
+from producer import get_mail
 
 app = Flask(__name__)
 
